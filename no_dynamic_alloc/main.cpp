@@ -20,7 +20,7 @@ int main(int argc, char* argv[]){
         fout << str;
         fout.close();
         
-        system("./cmd");
+        system("./cmd 2> /dev/null");
         
         ifstream fin("input");
         fin >> a;
@@ -39,7 +39,7 @@ int main(int argc, char* argv[]){
     string answer;
     ans >> answer;
     
-    system("clear");
+    //system("clear");
     cout << setw(20) << "-------------------------------------\n";
     cout << setw(20) << answer << "\n";
     cout << setw(20) << "-------------------------------------\n";
